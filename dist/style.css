@@ -554,11 +554,6 @@ video {
   display: none;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -579,9 +574,9 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .flex {
@@ -626,10 +621,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .px-5 {
@@ -719,10 +710,6 @@ video {
 
   .md\:overflow-x-hidden {
     overflow-x: hidden;
-  }
-
-  .md\:p-5 {
-    padding: 1.25rem;
   }
 
   .md\:text-center {
