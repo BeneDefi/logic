@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded',function(){
     checkBtn.addEventListener('click', function(){
        const firstNumber = parseFloat(firstNum.value);
        const secondNumber = parseFloat(secondNum.value)
-       if (firstNumber > secondNum){
+       if (firstNumber > secondNumber){
         outcome.textContent = `${firstNumber} is greater than ${secondNumber}`
       } else if (firstNumber == secondNumber) {
         outcome.textContent = `${firstNumber} is equal to ${secondNumber}`
