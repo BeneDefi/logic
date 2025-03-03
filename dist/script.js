@@ -147,7 +147,9 @@ document.addEventListener('DOMContentLoaded',function(){
    
     ageBtn.addEventListener('click', function(){
        const age = parseFloat(customerAge.value);
-       if (age <= 12){
+        if (age <= 0){
+        checkAge.textContent = `Below age limit`
+      } else if (age <= 12){
         checkAge.textContent = `Your ticket price is $5`
       } else if (age <= 18){
         checkAge.textContent = `Your ticket price is $10`
@@ -156,7 +158,7 @@ document.addEventListener('DOMContentLoaded',function(){
       } else if (age >= 60){
         checkAge.textContent = `Your ticket price is $15`
       } else{
-        checkAge.textContent = `No ticket for you`
+        checkAge.textContent = `Not an age`
       }
         
     })
@@ -190,8 +192,6 @@ document.addEventListener('DOMContentLoaded',function(){
         checkprice.textContent = `Your disount is $20`
       } else if(price >= 50){
         checkprice.textContent = `Your discount is $10`
-      } else if (price === 0 ){
-        checkprice.textContent = `Below age limit`
       } else{
         checkprice.textContent = `You have no discount`
       };
