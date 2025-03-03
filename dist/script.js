@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded',function(){
  givenNumBtn.addEventListener('click', function(){
     const inputNumber = parseFloat(givenNumber.value);
     if(inputNumber > setNumber){
-        result.textContent = "This is a Positive number";
+        result.textContent = `${inputNumber} is a Positive Number`;
     } else if (inputNumber == setNumber){
-        result.textContent = "This number is neutral";
+        result.textContent = `${inputNumber} is a Neutral Number`;
+    } else if (inputNumber < setNumber){
+        result.textContent = `${inputNumber} is a Negative Number`;
     } else {
-        result.textContent = "This number is negative";
+      result.textContent = "This is not a number" ;
     }
  })
 
@@ -186,6 +188,8 @@ document.addEventListener('DOMContentLoaded',function(){
         checkprice.textContent = `Your disount is $20`
       } else if(price >= 50){
         checkprice.textContent = `Your discount is $10`
+      } else if (price === 0 ){
+        checkprice.textContent = `Below age limit`
       } else{
         checkprice.textContent = `You have no discount`
       };
