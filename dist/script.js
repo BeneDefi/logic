@@ -43,10 +43,12 @@ document.addEventListener('DOMContentLoaded',function(){
        const num = parseFloat(number.value);
        if (num % 2 == 0){
         check.textContent = `${num} is an even Number`
-      } else{
+      } else if(num % 2 == 1){
           check.textContent = `${num} is an odd Number` 
-      }    
-      })
+      } else{
+        check.textContent = `This is not a number`
+      }
+      });
    
    });
 
