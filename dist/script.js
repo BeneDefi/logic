@@ -104,15 +104,15 @@ document.addEventListener('DOMContentLoaded',function(){
    
     gradeBtn.addEventListener('click', function(){
        const studentGrade = parseFloat(grade.value);
-       if (studentGrade >= 70 || studentGrade == 100){
+       if (studentGrade >= 70 && studentGrade <= 100){
         checkGrade.textContent = `A`
-      } else if (studentGrade >= 60){
+      } else if (studentGrade >= 60 && studentGrade <= 69){
         checkGrade.textContent = `B`
-      } else if (studentGrade >= 50){
+      } else if (studentGrade >= 50 && studentGrade <= 59){
         checkGrade.textContent = `C`
-      } else if (studentGrade >= 45){
+      } else if (studentGrade >= 45 && studentGrade <= 49){
         checkGrade.textContent = `D`
-      } else if (studentGrade >= 0 || studentGrade <= 44){
+      } else if (studentGrade >= 0 && studentGrade <= 44){
         checkGrade.textContent = `F`
       } else(
         checkGrade.textContent = `Not a valid score`
